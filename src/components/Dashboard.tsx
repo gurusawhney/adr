@@ -18,10 +18,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems } from './listItems';
-import Chart from './Chart';
-import Highlights from './Highlights';
-import Medication from './Medication';
-import PatientData from "./PatientData";
 
 const drawerWidth: number = 240;
 
@@ -82,7 +78,6 @@ export default function Dashboard() {
     };
 
     const {name} = useParams<{ name: string }>();
-    const patientName = name || "Patient_1"
 
     return (
         <ThemeProvider theme={defaultTheme}>
@@ -113,7 +108,7 @@ export default function Dashboard() {
                             noWrap
                             sx={{ flexGrow: 1 }}
                         >
-                            Patient Dashboard
+                            Cue Dashboard
                         </Typography>
                         <IconButton color="inherit">
                             <Badge badgeContent={4} color="secondary">
@@ -156,44 +151,7 @@ export default function Dashboard() {
                     <Toolbar />
                     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
                         <Grid container spacing={3}>
-                            {/* PatientData */}
-                            <Grid item xs={12}>
-                                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                                    <PatientData name={patientName}/>
-                                </Paper>
-                            </Grid>
-                            {/* Highlights */}
-                            <Grid item xs={12} md={4} lg={3}>
-                                <Paper
-                                    sx={{
-                                        p: 2,
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        height: 500,
-                                    }}
-                                >
-                                    <Highlights />
-                                </Paper>
-                            </Grid>
-                            {/* Chart */}
-                            <Grid item xs={12} md={8} lg={9}>
-                                <Paper
-                                    sx={{
-                                        p: 2,
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        height: 500,
-                                    }}
-                                >
-                                    <Chart name={patientName}/>
-                                </Paper>
-                            </Grid>
-                            {/* Medication */}
-                            <Grid item xs={12}>
-                                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                                    <Medication name={patientName}/>
-                                </Paper>
-                            </Grid>
+                            Enter your content here
                         </Grid>
                     </Container>
                 </Box>

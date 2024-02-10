@@ -1,0 +1,71 @@
+{
+    "projects": [
+      {
+        "project_id": 1,
+        "project_name": "Sample Project 1",
+        "sound_engineer": "John Doe",
+        "talent": "Jane Smith"
+      },
+      {
+        "project_id": 2,
+        "project_name": "Sample Project 2",
+        "sound_engineer": "Bob Johnson",
+        "talent": "Mike Williams"
+      }
+    ],
+    "cues": [
+      {
+        "cue_id": 101,
+        "project_id": 1,
+        "cue_timestamp": "2024-02-10T12:30:00",
+        "talent": "Jane Smith",
+        "status": "In Progress"
+      },
+      {
+        "cue_id": 102,
+        "project_id": 1,
+        "cue_timestamp": "2024-02-11T14:45:00",
+        "talent": "John Davis",
+        "status": "Completed"
+      },
+      {
+        "cue_id": 201,
+        "project_id": 2,
+        "cue_timestamp": "2024-02-12T10:15:00",
+        "talent": "Mike Williams",
+        "status": "Pending"
+      }
+    ],
+    "tracks": [
+      {
+        "track_id": 1001,
+        "project_id": 1,
+        "talent": "Jane Smith",
+        "cue_id": 101,
+        "track_location": "Studio A",
+        "start_time": "00:05:30",
+        "end_time": "00:10:15",
+        "type": "Vocal"
+      },
+      {
+        "track_id": 1002,
+        "project_id": 1,
+        "talent": "John Davis",
+        "cue_id": 102,
+        "track_location": "Studio B",
+        "start_time": "00:02:45",
+        "end_time": "00:07:20",
+        "type": "Instrumental"
+      },
+      {
+        "track_id": 2001,
+        "project_id": 2,
+        "talent": "Mike Williams",
+        "cue_id": 201,
+        "track_location": "Studio C",
+        "start_time": "00:01:00",
+        "end_time": "00:03:45",
+        "type": "Voiceover"
+      }
+    ]
+}
